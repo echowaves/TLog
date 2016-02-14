@@ -1,6 +1,5 @@
 import React, { Text, View, Image, ScrollView, } from 'react-native'
-import { ScreenStyle } from '../../ios/screen'
-import { FormStyle, FormTextInput, FormPicker, findById } from '../form'
+import { ScreenStyle } from '../../screens/screen'
 
 import Style from './profile-screen__style.js'
 

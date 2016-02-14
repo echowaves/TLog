@@ -1,10 +1,8 @@
 import React, { Component, PropTypes, PickerIOS, Text, View, Image, ScrollView } from 'react-native'
 import { connect } from 'react-redux/native'
 
-import SidemenuButton from '../../common/sidemenu-button'
 
-import { ScreenStyle } from '../../ios/screen'
-import { FormStyle, FormTextInput, FormPicker, findById } from '../form'
+import { ScreenStyle } from '../../screens/screen'
 
 import Style from './profile-screen__style.js'
 import Profile from './profile-screen__profile.js'

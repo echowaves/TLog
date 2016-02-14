@@ -10,7 +10,7 @@ import { connect } from 'react-redux/native'
 //   deleteLocation, setCurrentLocation, newJob,
 // } from '../../common/actions'
 
-import { ScreenStyle } from '../../ios/screen'
+import { ScreenStyle } from '../../screens/screen'
 
 import Style from './home-screen__style.js'
 

@@ -4,12 +4,10 @@ export default {
   },
 
   development: {
-    baseUrl: 'http://localhost:3000/api/customers',
+    baseUrl: 'http://localhost:3000/',
     auth: {
       restorable: true // whether or not cache auth token
     },
-    pullingInterval: 15000,
-    smsCooldownSec: 5,    
   },
 
   production: {

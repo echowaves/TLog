@@ -21,21 +21,21 @@ export function authenticate(token) {
 export function login(email, password) {
   const loginUrl = Config.baseUrl + '/auth_token'
 
-  // return fetch(loginUrl, {
-  //   method: 'POST',
-  //   headers: headers(),
-  //   body: JSON.stringify({
-  //     auth: {
-  //       email,
-  //       password,
-  //     }})
-  // }).then((response) => {
-  //   if(response.ok) {
-  //     return Promise.resolve(response.json())
-  //   } else {
-  //     return Promise.reject(new Error("Authentication failed"))
-  //   }
-  // })
+  return fetch(loginUrl, {
+    method: 'POST',
+    headers: headers(),
+    body: JSON.stringify({
+      auth: {
+        email,
+        password,
+      }})
+  }).then((response) => {
+    if(response.ok) {
+      return Promise.resolve(response.json())
+    } else {
+      return Promise.reject(new Error("Authentication failed"))
+    }
+  })
 
   return Promise.resolve({token: '123123'})
 

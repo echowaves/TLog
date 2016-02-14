@@ -2,11 +2,8 @@ import React, { PropTypes, PickerIOS, Text, View, Image, ScrollView } from 'reac
 import { connect } from 'react-redux/native'
 import { Actions } from 'react-native-router-flux'
 
-import SidemenuButton from '../../common/sidemenu-button'
-
 import { updateViewerProfile } from '../../common/actions'
-import { ScreenStyle } from '../../ios/screen'
-import { FormStyle, FormTextInput, FormPicker, findById } from '../form'
+import { ScreenStyle } from '../../screens/screen'
 import Button from '../../common/button'
 
 import Style from './profile-edit-screen__style.js'

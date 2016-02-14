@@ -1,7 +1,6 @@
 import React, { View, Image, ScrollView } from 'react-native'
 import { Actions } from 'react-native-router-flux'
 import { UIImagePickerManager } from 'NativeModules'
-import { FormStyle, FormTextInput } from '../form'
 import Button from '../../common/button'
 
 import Style from './profile-edit-screen__style.js'

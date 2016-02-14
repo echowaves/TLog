@@ -7,7 +7,7 @@ import React, {
 import { Actions } from 'react-native-router-flux'
 import { connect } from 'react-redux/native'
 import { restoreSession } from '../../common/actions'
-import { ScreenStyle } from '../../ios/screen'
+import { ScreenStyle } from '../../screens/screen'
 
 
 class AppLauncher extends Component {
