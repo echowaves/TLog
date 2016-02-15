@@ -8,15 +8,6 @@ import * as Api from '../../common/api'
  * GENERAL
  */
 
-export const TOGGLE_SIDEBAR = 'TOGGLE_SIDEBAR'
-export function toggleSidebar(isOpen) {
-  return {
-    type: TOGGLE_SIDEBAR,
-    payload: {
-      isOpen
-    }
-  }
-}
 
 /*
  * AUTH
@@ -80,47 +71,6 @@ export function logout() {
   }
 }
 
-
-/*
- * FAQs
- */
-export const LOAD_FAQS = 'LOAD_FAQS'
-
-
-export function loadFaqs({auth, viewer}) {
-  return {
-    type: LOAD_FAQS,
-    payload: Api.fetchFaqs(auth)
-  }
-}
-
-
-
-/*
- * NOTIFICATIONS
- */
-
-export const ADD_REQUEST_NOTIFICATION = 'ADD_REQUEST_NOTIFICATION'
-export const READ_REQUEST_NOTIFICATION = 'READ_REQUEST_NOTIFICATION'
-
-export function addRequestNotification(id, isActive) {
-  return {
-    type: ADD_REQUEST_NOTIFICATION,
-    payload: {
-      id,
-      isActive
-    }
-  }
-}
-
-export function readRequestNotification(id) {
-  return {
-    type: READ_REQUEST_NOTIFICATION,
-    payload: {
-      id
-    }
-  }
-}
 
 /*
  * NETWORKING

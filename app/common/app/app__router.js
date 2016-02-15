@@ -45,11 +45,11 @@ class AppRouter extends Component {
   }
 
   render() {
-    // if (!this.props.viewer) {
+    if (!this.props.viewer) {
       return this.renderGuestRouter()
-    // }
+    }
 
-    // return this.renderUserRouter()
+    return this.renderUserRouter()
   }
 }
 
